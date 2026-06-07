@@ -12,7 +12,7 @@ const products = [
     icon: "🎓",
     title: "PG College Software",
     desc: "Semester-wise students, fees, attendance, exams, marksheet and certificates for degree colleges.",
-    url: "https://mahila-college.vercel.app",
+    url: "https://college.nishantsoftwares.in",
     color: "purple",
   },
   {
@@ -26,7 +26,7 @@ const products = [
     icon: "🧠",
     title: "Psychiatrist Pro",
     desc: "Patient records, prescriptions, custom medicines library and follow-up management for clinics.",
-    url: "https://psychiatrists.nishantsoftwares.in",
+    url: "https://psychiatrist.nishantsoftwares.in",
     color: "teal",
   },
   {
@@ -37,13 +37,14 @@ const products = [
     color: "orange",
   },
 ];
-
 const colorMap = {
   blue: "bg-blue-50 text-blue-700 border-blue-100 hover:border-blue-300",
-  purple: "bg-purple-50 text-purple-700 border-purple-100 hover:border-purple-300",
+  purple:
+    "bg-purple-50 text-purple-700 border-purple-100 hover:border-purple-300",
   green: "bg-green-50 text-green-700 border-green-100 hover:border-green-300",
   teal: "bg-teal-50 text-teal-700 border-teal-100 hover:border-teal-300",
-  orange: "bg-orange-50 text-orange-700 border-orange-100 hover:border-orange-300",
+  orange:
+    "bg-orange-50 text-orange-700 border-orange-100 hover:border-orange-300",
 };
 
 export default function HomePage() {
@@ -60,8 +61,8 @@ export default function HomePage() {
           <span className="text-green-600">Schools, Colleges & Clinics</span>
         </h1>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
-          Single-tenant SaaS — your data, your software. No sharing, no compromise.
-          Works on mobile and desktop both.
+          Single-tenant SaaS — your data, your software. No sharing, no
+          compromise. Works on mobile and desktop both.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
@@ -83,7 +84,9 @@ export default function HomePage() {
 
       {/* Products */}
       <div id="products" className="mb-16">
-        <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">Our Products</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">
+          Our Products
+        </h2>
         <p className="text-center text-gray-400 text-sm mb-8">
           ₹4,999/year — 7 days free trial — direct support from developer
         </p>
@@ -97,7 +100,9 @@ export default function HomePage() {
               className={`block p-6 rounded-xl border-2 transition ${colorMap[p.color]}`}
             >
               <div className="text-4xl mb-3">{p.icon}</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">{p.title}</h3>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">
+                {p.title}
+              </h3>
               <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
               <p className="text-sm font-medium mt-4">View Demo →</p>
             </a>
@@ -109,13 +114,24 @@ export default function HomePage() {
       <div id="contact" className="text-center">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
-          <a href="tel:+919996865069" className="border border-gray-200 px-6 py-3 rounded-lg hover:bg-gray-50">
+          <a
+            href="tel:+919996865069"
+            className="border border-gray-200 px-6 py-3 rounded-lg hover:bg-gray-50"
+          >
             📞 9996865069
           </a>
-          <a href="https://wa.me/919996865069" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+          <a
+            href="https://wa.me/919996865069"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"
+          >
             💬 WhatsApp
           </a>
-          <a href="mailto:prasad.kamta@gmail.com" className="border border-gray-200 px-6 py-3 rounded-lg hover:bg-gray-50">
+          <a
+            href="mailto:prasad.kamta@gmail.com"
+            className="border border-gray-200 px-6 py-3 rounded-lg hover:bg-gray-50"
+          >
             ✉️ prasad.kamta@gmail.com
           </a>
         </div>
