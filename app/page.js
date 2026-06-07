@@ -99,38 +99,15 @@ export default function HomePage() {
               <div className="text-4xl mb-3">{p.icon}</div>
               <h3 className="font-bold text-gray-900 text-lg mb-2">{p.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
-              <p className={`text-sm font-medium mt-4`}>View Demo →</p>
+              <p className="text-sm font-medium mt-4">View Demo →</p>
             </a>
           ))}
         </div>
       </div>
 
-      {/* Pricing */}
-      <div className="bg-green-900 rounded-2xl p-10 text-white text-center mb-16">
-        <h2 className="text-2xl font-bold mb-2">Simple Pricing</h2>
-        <p className="text-green-300 mb-6 text-sm">One price. Everything included. No hidden charges.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-8 text-center">
-          <div>
-            <p className="text-4xl font-bold">₹4,999</p>
-            <p className="text-green-300 text-sm">New purchase / year</p>
-          </div>
-          <div className="hidden sm:block w-px bg-green-700" />
-          <div>
-            <p className="text-4xl font-bold">₹2,500</p>
-            <p className="text-green-300 text-sm">Renewal / year</p>
-          </div>
-          <div className="hidden sm:block w-px bg-green-700" />
-          <div>
-            <p className="text-4xl font-bold">7 Days</p>
-            <p className="text-green-300 text-sm">Free trial</p>
-          </div>
-        </div>
-      </div>
-
       {/* Contact */}
       <div id="contact" className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h2>
-        <p className="text-gray-400 text-sm mb-6">We respond within 1 hour on WhatsApp.</p>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
           <a href="tel:+919996865069" className="border border-gray-200 px-6 py-3 rounded-lg hover:bg-gray-50">
             📞 9996865069
