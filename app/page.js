@@ -36,6 +36,13 @@ const products = [
     url: "https://pharma.nishantsoftwares.in",
     color: "orange",
   },
+  {
+    icon: "⚖️",
+    title: "Legal Pro",
+    desc: "Case management, hearing dates, client reminders via WhatsApp — complete law practice management on mobile.",
+    url: "https://legal.nishantsoftwares.in",
+    color: "slate",
+  },
 ];
 const colorMap = {
   blue: "bg-blue-50 text-blue-700 border-blue-100 hover:border-blue-300",
@@ -45,6 +52,7 @@ const colorMap = {
   teal: "bg-teal-50 text-teal-700 border-teal-100 hover:border-teal-300",
   orange:
     "bg-orange-50 text-orange-700 border-orange-100 hover:border-orange-300",
+  slate: "bg-slate-50 text-slate-700 border-slate-100 hover:border-slate-300",
 };
 
 export default function HomePage() {
