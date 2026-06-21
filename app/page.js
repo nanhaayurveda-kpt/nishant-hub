@@ -71,7 +71,7 @@ export default function HomePage() {
       {/* Hero */}
       <div className="text-center mb-16">
         <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-5">
-          🇮🇳 Made in Varanasi — For Indian Businesses
+         Made in Varanasi — For Indian Businesses
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Affordable Software for
