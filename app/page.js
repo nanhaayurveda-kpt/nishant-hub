@@ -43,7 +43,15 @@ const products = [
     url: "https://legal.nishantsoftwares.in",
     color: "slate",
   },
+  {
+    icon: "🧾",
+    title: "Tax Advocate Pro",
+    desc: "Tax case management with AI draft generator for notice replies & appeals, case-law search, and hearing reminders via WhatsApp.",
+    url: "https://tax-advocate.nishantsoftwares.in",
+    color: "indigo",
+  },
 ];
+
 const colorMap = {
   blue: "bg-blue-50 text-blue-700 border-blue-100 hover:border-blue-300",
   purple:
@@ -53,6 +61,8 @@ const colorMap = {
   orange:
     "bg-orange-50 text-orange-700 border-orange-100 hover:border-orange-300",
   slate: "bg-slate-50 text-slate-700 border-slate-100 hover:border-slate-300",
+  indigo:
+    "bg-indigo-50 text-indigo-700 border-indigo-100 hover:border-indigo-300",
 };
 
 export default function HomePage() {
