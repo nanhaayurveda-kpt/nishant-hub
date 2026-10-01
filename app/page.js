@@ -1,181 +1,164 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Nishant Softwares — Websites & SaaS Built in Varanasi",
+  description:
+    "React websites with a Zoho Catalyst backend, plus affordable SaaS for Indian schools, colleges and clinics. Built in Varanasi.",
+};
+
 const products = [
+  { name: "School ERP", url: "https://school.nishantsoftwares.in" },
+  { name: "PG College", url: "https://college.nishantsoftwares.in" },
+  { name: "Ayurveda College", url: "https://ayurveda.nishantsoftwares.in" },
+  { name: "Psychiatrist Pro", url: "https://psychiatrist.nishantsoftwares.in" },
+  { name: "Pharmacy Pro", url: "https://pharma.nishantsoftwares.in" },
+  { name: "Legal Pro", url: "https://legal.nishantsoftwares.in" },
   {
-    icon: "🏫",
-    title: "School ERP",
-    desc: "Students, fees, attendance, homework, transport — complete school management on mobile.",
-    url: "https://school.nishantsoftwares.in",
-    color: "blue",
-  },
-  {
-    icon: "🎓",
-    title: "PG College Software",
-    desc: "Semester-wise students, fees, attendance, exams, marksheet and certificates for degree colleges.",
-    url: "https://college.nishantsoftwares.in",
-    color: "purple",
-  },
-  {
-    icon: "🌿",
-    title: "Ayurveda College Software",
-    desc: "BAMS course management — Professional Year-wise students, fees, attendance, exams and certificates.",
-    url: "https://ayurveda.nishantsoftwares.in",
-    color: "green",
-  },
-  {
-    icon: "🧠",
-    title: "Psychiatrist Pro",
-    desc: "Patient records, prescriptions, custom medicines library and follow-up management for clinics.",
-    url: "https://psychiatrist.nishantsoftwares.in",
-    color: "teal",
-  },
-  {
-    icon: "💊",
-    title: "Pharmacy Pro",
-    desc: "Stock, billing, expiry alerts, reorder alerts, GST export and Tally export for medical stores.",
-    url: "https://pharma.nishantsoftwares.in",
-    color: "orange",
-  },
-  {
-    icon: "⚖️",
-    title: "Legal Pro",
-    desc: "Case management, hearing dates, client reminders via WhatsApp — complete law practice management on mobile.",
-    url: "https://legal.nishantsoftwares.in",
-    color: "slate",
-  },
-  {
-    icon: "🧾",
-    title: "Tax Advocate Pro",
-    desc: "Tax case management with AI draft generator for notice replies & appeals, case-law search, and hearing reminders via WhatsApp.",
+    name: "Tax Advocate Pro",
     url: "https://tax-advocate.nishantsoftwares.in",
-    color: "indigo",
   },
 ];
 
-const colorMap = {
-  blue: "bg-blue-100 text-blue-800 border-blue-300 hover:border-blue-600 hover:shadow-lg hover:shadow-blue-100",
-  purple:
-    "bg-purple-100 text-purple-800 border-purple-300 hover:border-purple-600 hover:shadow-lg hover:shadow-purple-100",
-  green:
-    "bg-green-100 text-green-800 border-green-300 hover:border-green-600 hover:shadow-lg hover:shadow-green-100",
-  teal: "bg-teal-100 text-teal-800 border-teal-300 hover:border-teal-600 hover:shadow-lg hover:shadow-teal-100",
-  orange:
-    "bg-orange-100 text-orange-800 border-orange-300 hover:border-orange-600 hover:shadow-lg hover:shadow-orange-100",
-  slate:
-    "bg-slate-100 text-slate-800 border-slate-300 hover:border-slate-600 hover:shadow-lg hover:shadow-slate-100",
-  indigo:
-    "bg-indigo-100 text-indigo-800 border-indigo-300 hover:border-indigo-600 hover:shadow-lg hover:shadow-indigo-100",
-};
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Hero */}
-      <div className="text-center mb-16">
-        <div className="inline-block px-4 py-1.5 bg-green-600 text-white rounded-full text-sm font-bold mb-5">
+    <main className="min-h-screen bg-white text-gray-800 font-sans">
+      {/* NAV */}
+      <nav className="flex items-center justify-between px-6 py-4 border-b border-gray-100 sticky top-0 bg-white z-50">
+        <Link href="/" className="text-lg font-bold text-blue-700">
+          🖥️ Nishant Softwares
+        </Link>
+        <div className="flex gap-4 text-sm font-semibold">
+          <Link href="#products" className="text-gray-600 hover:text-blue-700">
+            Products
+          </Link>
+          <Link href="#contact" className="text-gray-600 hover:text-blue-700">
+            Contact
+          </Link>
+          <a
+            href="https://wa.me/919996865069"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 hover:underline"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="text-center px-6 py-16 bg-gradient-to-b from-blue-50 to-white">
+        <span className="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
           Made in Varanasi — For Indian Businesses
-        </div>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-          Affordable Software for
+        </span>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          वेबसाइट और न्यूज़ पोर्टल
           <br />
-          <span className="text-green-600">Schools, Colleges & Clinics</span>
+          <span className="text-blue-600">बिना होस्टिंग खर्च के</span>
         </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
-          Single-tenant SaaS — your data, your software. No sharing, no
-          compromise. Works on mobile and desktop both.
+        <p className="text-gray-500 text-lg mb-8 max-w-xl mx-auto">
+          React फ्रंटएंड, Zoho Catalyst बैकएंड — स्वदेशी तकनीक पर बनी वेबसाइट।
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link
-            href="#products"
-            className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 font-bold text-sm shadow-md shadow-green-200"
-          >
-            See All Products →
-          </Link>
-          <Link
-            href="https://wa.me/919996865069"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-gray-400 text-gray-800 px-8 py-3 rounded-lg hover:bg-gray-100 font-bold text-sm"
-          >
-            💬 WhatsApp Us
-          </Link>
-        </div>
-      </div>
+        <a
+          href="https://wa.me/919996865069"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-700 transition text-lg"
+        >
+          💬 WhatsApp पर बात करें
+        </a>
+      </section>
 
-      {/* Products */}
-      <div id="products" className="mb-16">
-        <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">
-          Our Products
-        </h2>
-        <p className="text-center text-gray-600 text-sm mb-8 font-medium">
-          ₹4,999/year — 7 days free trial — direct support from developer
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p, i) => (
-            <Link
-              key={i}
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`block p-6 rounded-xl border-2 transition ${colorMap[p.color]}`}
-            >
-              <div className="text-4xl mb-3">{p.icon}</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">
-                {p.title}
-              </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">{p.desc}</p>
-              <p className="text-sm font-bold mt-4">View Demo →</p>
-            </Link>
-          ))}
+      {/* WEBSITES / ZOHO HIGHLIGHT */}
+      <section className="px-6 py-16 max-w-3xl mx-auto">
+        <div className="bg-yellow-100 border-l-8 border-yellow-500 rounded-xl p-8">
+          <p className="text-lg md:text-xl font-bold text-gray-900 leading-relaxed mb-4">
+            हम React पर ऐसी वेबसाइट बनाते हैं, जिसका बैकएंड{" "}
+            <mark className="bg-yellow-300 px-1 rounded">
+              जोहो के कैटालिस्ट (Zoho Catalyst)
+            </mark>{" "}
+            पर बना होता है।
+          </p>
+          <p className="text-gray-800 mb-4">
+            इससे मध्यम दर्जे तक की वेबसाइट और न्यूज़ पोर्टल लंबे समय तक बिना
+            होस्टिंग का खर्च उठाए चल सकते हैं।
+          </p>
+          <p className="font-bold text-gray-900">
+            🇮🇳 हमें जोहो को सपोर्ट करना चाहिए, क्योंकि वह स्वदेशी है।
+          </p>
         </div>
-      </div>
+      </section>
 
-      {/* Contact */}
-      <div id="contact" className="text-center mb-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
-          <Link
-            href="tel:+919996865069"
-            className="border-2 border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-100 font-bold"
-          >
+      {/* PRODUCTS */}
+      <section id="products" className="bg-gray-50 px-6 py-12">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-xl font-bold mb-3">
+            हमारे SaaS सॉफ्टवेयर भी हैं
+          </h2>
+          <p className="text-gray-600 mb-3">
+            {products.map((p, i) => (
+              <span key={p.name}>
+                <a
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {p.name}
+                </a>
+                {i < products.length - 1 ? " · " : ""}
+              </span>
+            ))}
+          </p>
+          <p className="text-sm text-gray-500">
+            Single-tenant — ₹4,999/year — 7 days free trial
+          </p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section
+        id="contact"
+        className="px-6 py-16 max-w-3xl mx-auto text-center"
+      >
+        <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+        <p className="mb-8 text-gray-700">
+          <a href="tel:+919996865069" className="hover:text-blue-600">
             📞 9996865069
-          </Link>
-          <Link
+          </a>
+          &nbsp;|&nbsp;
+          <a
             href="https://wa.me/919996865069"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 font-bold shadow-md shadow-green-200"
+            className="hover:text-green-600"
           >
             💬 WhatsApp
-          </Link>
-          <Link
+          </a>
+          &nbsp;|&nbsp;
+          <a
             href="mailto:prasad.kamta@gmail.com"
-            className="border-2 border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-100 font-bold"
+            className="hover:text-blue-600"
           >
             ✉️ prasad.kamta@gmail.com
-          </Link>
-        </div>
-      </div>
-
-      {/* Footer - Sales Executive */}
-      <footer className="border-t-2 border-gray-200 pt-8 text-center">
-        <p className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">
-          Sales Executive
+          </a>
         </p>
-        <div className="inline-block bg-green-50 border-2 border-green-300 rounded-xl px-8 py-5">
-          <p className="text-lg font-extrabold text-gray-900">राजीव कुमार झा</p>
-          <p className="text-sm text-gray-700 mt-1">संपर्क: इंदुपुर</p>
-          <p className="text-sm text-gray-700">पोस्ट: बड़हिया</p>
-          <p className="text-sm text-gray-700">जिला: लखीसराय</p>
-          <p className="text-sm text-gray-700">बिहार 811302</p>
-          <Link
-            href="tel:+916206756085"
-            className="inline-block mt-3 text-green-700 font-bold text-sm hover:underline"
-          >
-            📞 6206756085
-          </Link>
-        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="text-center text-sm text-gray-400 px-6 py-8 border-t border-gray-100">
+        <p className="mb-1">Varanasi, Uttar Pradesh — India</p>
+        <p className="mb-1">
+          Powered by{" "}
+          <a href="https://vercel.com" className="hover:text-blue-600">
+            Vercel
+          </a>{" "}
+          &amp;{" "}
+          <a href="https://turso.tech" className="hover:text-blue-600">
+            Turso
+          </a>
+        </p>
+        <p>© 2026 Nishant Softwares. All rights reserved.</p>
       </footer>
-    </div>
+    </main>
   );
 }
