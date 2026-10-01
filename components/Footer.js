@@ -1,3 +1,5 @@
+import ViewCounter from "@/components/ViewCounter";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 px-6 py-10 text-center text-white">
@@ -18,6 +20,7 @@ export default function Footer() {
           💬 WhatsApp
         </a>
       </p>
+      <ViewCounter />
       <p className="text-base font-semibold text-gray-200">
         © 2026 Nishant Softwares — Varanasi
       </p>
